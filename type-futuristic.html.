@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Volt</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    background:#070a09;
+    color:#eafff4;
+    font-family:"Space Grotesk",sans-serif;
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(120deg,transparent 40%,#00ff9d08);
+    pointer-events:none;
+}
+
+nav{
+    padding:25px 5%;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #16362a;
+}
+
+.logo{
+    color:#00ff9d;
+    font-weight:700;
+}
+
+nav a{
+    margin-left:25px;
+    color:#6d9583;
+    text-decoration:none;
+}
+
+.hero{
+    padding:130px 7%;
+    border-bottom:1px solid #16362a;
+}
+
+.tag{
+    color:#00ff9d;
+    font-size:13px;
+}
+
+h1{
+    font-size:clamp(60px,11vw,145px);
+    line-height:.82;
+    letter-spacing:-7px;
+    margin:25px 0;
+}
+
+h1 span{
+    color:#00ff9d;
+    text-shadow:0 0 30px #00ff9d55;
+}
+
+.hero p{
+    max-width:600px;
+    color:#6d8b7e;
+    line-height:1.8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.stat{
+    padding:60px 7%;
+    border-right:1px solid #16362a;
+    border-bottom:1px solid #16362a;
+}
+
+.stat strong{
+    display:block;
+    color:#00ff9d;
+    font-size:45px;
+}
+
+.stat span{color:#668174}
+
+footer{
+    padding:30px;
+    color:#456456;
+}
+
+@media(max-width:650px){
+    .stats{grid-template-columns:1fr}
+    .stat{border-right:0}
+    nav div:last-child{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">VOLT_</div>
+<div>
+<a href="#">SYSTEM</a>
+<a href="#">WORK</a>
+<a href="#">CONTACT</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="tag">/// SYSTEM ONLINE</div>
+
+<h1>FUTURE<br><span>LOADED.</span></h1>
+
+<p>
+We design digital systems for people building
+the future of technology, culture and media.
+</p>
+</section>
+
+<section class="stats">
+<div class="stat">
+<strong>42+</strong>
+<span>Projects shipped</span>
+</div>
+
+<div class="stat">
+<strong>18</strong>
+<span>Global clients</span>
+</div>
+
+<div class="stat">
+<strong>99%</strong>
+<span>Pixel precision</span>
+</div>
+</section>
+
+<footer>VOLT_SYSTEMS // CRYSTAL WORKS</footer>
+
+</body>
+</html>
+
