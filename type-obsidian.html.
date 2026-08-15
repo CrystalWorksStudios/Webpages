@@ -1,0 +1,140 @@
+# Crystal Works — Obsidian
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obsidian</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:wght@600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    background:#080808;
+    color:#eee;
+    font-family:"DM Mono",monospace;
+}
+
+header{
+    padding:30px 6%;
+    border-bottom:1px solid #222;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{letter-spacing:4px}
+
+.hero{
+    padding:140px 7%;
+    border-bottom:1px solid #222;
+}
+
+.hero small{color:#8b5cf6}
+
+h1{
+    font-family:"Playfair Display";
+    font-size:clamp(60px,10vw,140px);
+    line-height:.9;
+    max-width:1000px;
+    margin:25px 0;
+}
+
+h1 span{color:#8b5cf6}
+
+.hero p{
+    max-width:600px;
+    color:#888;
+    line-height:1.8;
+}
+
+.work{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.project{
+    min-height:350px;
+    padding:40px;
+    border-right:1px solid #222;
+    border-bottom:1px solid #222;
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    transition:.3s;
+}
+
+.project:hover{
+    background:#110d18;
+}
+
+.project span{
+    color:#666;
+    font-size:12px;
+}
+
+.project h2{
+    font-family:"Playfair Display";
+    font-size:40px;
+    margin-top:10px;
+}
+
+footer{
+    padding:30px;
+    color:#555;
+}
+
+@media(max-width:650px){
+    .work{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">OBSIDIAN</div>
+<div>2026</div>
+</header>
+
+<section class="hero">
+<small>01 / DIGITAL ARTISANS</small>
+<h1>Quietly<br><span>luxurious.</span></h1>
+<p>
+Premium digital experiences for brands that
+care about every detail.
+</p>
+</section>
+
+<section class="work">
+
+<div class="project">
+<span>PROJECT / 001</span>
+<h2>Maison</h2>
+</div>
+
+<div class="project">
+<span>PROJECT / 002</span>
+<h2>Noir</h2>
+</div>
+
+<div class="project">
+<span>PROJECT / 003</span>
+<h2>Velvet</h2>
+</div>
+
+<div class="project">
+<span>PROJECT / 004</span>
+<h2>Archive</h2>
+</div>
+
+</section>
+
+<footer>OBSIDIAN — CRYSTAL WORKS STUDIOS</footer>
+
+</body>
+</html>
+```
