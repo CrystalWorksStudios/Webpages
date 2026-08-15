@@ -1,0 +1,164 @@
+# Crystal Works — Solara
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solara</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Manrope,sans-serif;
+    background:#fff8ee;
+    color:#17120d;
+}
+
+nav{
+    padding:25px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-weight:800;
+    font-size:22px;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#665b4e;
+}
+
+.hero{
+    padding:100px 7%;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+}
+
+h1{
+    font-size:clamp(55px,8vw,105px);
+    line-height:.95;
+    letter-spacing:-5px;
+}
+
+h1 span{color:#f97316}
+
+.hero p{
+    margin-top:30px;
+    max-width:560px;
+    color:#75695c;
+    line-height:1.8;
+}
+
+.sun{
+    width:min(400px,80vw);
+    aspect-ratio:1;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#ffcf70,#f97316);
+    box-shadow:0 30px 100px rgba(249,115,22,.3);
+}
+
+.section{
+    padding:80px 7%;
+    background:#17120d;
+    color:#fff;
+}
+
+.section h2{
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.feature{
+    border:1px solid #3b3025;
+    padding:30px;
+    border-radius:20px;
+}
+
+.feature p{
+    color:#aaa097;
+    margin-top:15px;
+    line-height:1.6;
+}
+
+footer{
+    padding:30px;
+    background:#17120d;
+    color:#71685f;
+    text-align:center;
+}
+
+@media(max-width:750px){
+    .hero{grid-template-columns:1fr;padding-top:60px}
+    .features{grid-template-columns:1fr}
+    nav div:last-child{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">SOLARA</div>
+<div>
+<a href="#">Work</a>
+<a href="#">Studio</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Ideas that<br><span>shine.</span></h1>
+<p>
+Solara is a creative studio building bright,
+bold and unforgettable digital experiences.
+</p>
+</div>
+
+<div class="sun"></div>
+</section>
+
+<section class="section">
+<h2>What we create.</h2>
+
+<div class="features">
+<div class="feature">
+<h3>Brand Identity</h3>
+<p>Visual identities that communicate instantly.</p>
+</div>
+
+<div class="feature">
+<h3>Web Design</h3>
+<p>Beautiful websites designed around your audience.</p>
+</div>
+
+<div class="feature">
+<h3>Creative Tech</h3>
+<p>Technology used as a creative medium.</p>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Solara</footer>
+
+</body>
+</html>
+```
