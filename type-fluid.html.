@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aqua</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:Poppins,sans-serif;
+    min-height:100vh;
+    color:#083344;
+    background:
+    radial-gradient(circle at 10% 10%,#67e8f955,transparent 30%),
+    radial-gradient(circle at 90% 90%,#818cf855,transparent 30%),
+    #e8fbff;
+}
+
+nav{
+    width:min(1100px,90%);
+    margin:20px auto;
+    padding:18px 22px;
+    border-radius:20px;
+    background:#ffffff66;
+    backdrop-filter:blur(20px);
+    border:1px solid #ffffff99;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{
+    font-weight:700;
+}
+
+nav a{
+    margin-left:25px;
+    color:#3b6472;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.glass{
+    width:min(850px,95%);
+    padding:70px 40px;
+    border-radius:40px;
+    background:#ffffff55;
+    backdrop-filter:blur(30px);
+    border:1px solid #ffffffaa;
+    box-shadow:0 30px 80px #0e749022;
+}
+
+h1{
+    font-size:clamp(50px,9vw,100px);
+    line-height:1;
+    letter-spacing:-4px;
+}
+
+h1 span{
+    background:linear-gradient(90deg,#06b6d4,#6366f1);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:600px;
+    margin:25px auto;
+    color:#50727d;
+    line-height:1.8;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:50px;
+    background:#083344;
+    color:white;
+    text-decoration:none;
+}
+
+.features{
+    width:min(1100px,90%);
+    margin:auto;
+    padding-bottom:100px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    padding:30px;
+    min-height:200px;
+    border-radius:25px;
+    background:#ffffff66;
+    border:1px solid #ffffffaa;
+    backdrop-filter:blur(15px);
+}
+
+.card h2{margin-bottom:15px}
+
+.card p{
+    color:#577985;
+    line-height:1.7;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#668995;
+}
+
+@media(max-width:700px){
+    .features{grid-template-columns:1fr}
+    nav div:last-child{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">AQUA</div>
+
+<div>
+<a href="#">Home</a>
+<a href="#">Explore</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="glass">
+
+<h1>Flow into<br><span>the future.</span></h1>
+
+<p>
+A digital studio creating fluid interfaces,
+immersive websites and technology that feels natural.
+</p>
+
+<a class="button" href="#services">Dive in</a>
+
+</div>
+
+</section>
+
+<section class="features" id="services">
+
+<div class="card">
+<h2>Fluid UI</h2>
+<p>Interfaces that adapt naturally to every device.</p>
+</div>
+
+<div class="card">
+<h2>Immersion</h2>
+<p>Digital environments designed to capture attention.</p>
+</div>
+
+<div class="card">
+<h2>Innovation</h2>
+<p>Creative technology built around tomorrow.</p>
+</div>
+
+</section>
+
+<footer>© 2026 CWS</footer>
+
+</body>
+</html>
+
